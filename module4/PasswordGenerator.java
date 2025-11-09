@@ -6,7 +6,7 @@ public class PasswordGenerator {
 
 	public static void main(String[] args) {
 		char randChar, userInput = 'y';
-		double passLength;
+		int passLength;
 		String userPassword;
 		Scanner input = new Scanner(System.in);
 		
@@ -20,7 +20,7 @@ public class PasswordGenerator {
 					System.out.println("The password must be at least 10 characters.");
 				}
 			}
-			for (double i = 0; i <= passLength; i++) {
+			for (int i = 0; i <= passLength; i++) {
 				randChar = (char)((Math.random() * 93) + 33);
 				userPassword += randChar;
 			}
@@ -38,5 +38,6 @@ public class PasswordGenerator {
 		
 		input.close();
 	}
+
 
 }
